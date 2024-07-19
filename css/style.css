@@ -1,0 +1,236 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'lobster';
+        src: url('../lobster/Lobster\ 1.4.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'roboto';
+        src: url('../roboto/Roboto-Light.ttf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'roboto1';
+        src: url('../roboto/Roboto-Bold.ttf') format('opentype');
+    }
+
+    :root{
+        --cor1:#180F4A;
+        --cor2:#FF2978;
+        --cor3:#090422;
+        --fonte1:sans-serif;
+        --fonte2:'lobster';
+        --fonte3:'roboto';
+        --fonte4:'roboto1';
+    }
+
+    body{
+        font-family: var(--fonte3);
+    }
+
+    .navbar{
+        height: 100px;
+        background-color: white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
+
+    .logo{
+        flex: 20%;
+        margin-left: 10%;
+        text-align: left;
+        padding: 20px;
+       /* border: 1px solid red;*/
+    }
+
+    .logo h1{
+        font-family: var(--fonte2);
+        font-size: 34px;
+        color: var(--cor1);
+    }
+
+    .menu{
+        flex: 70%;
+        text-align: right;
+        padding: 20px;
+       /* border: 1px solid green;*/
+    }
+
+    .menu a{
+        color: var(--cor1);
+        text-decoration: none;
+        font-size: 20px;
+        padding: 20px 16px;
+    }
+
+    .menu a:hover{
+        color: var(--cor2);
+        border-top: 4px solid #180F4A;
+    }
+
+    #botao{
+        background-color: var(--cor1);
+        padding: 10px 25px;
+        color: white;
+        border-radius: 5px;
+        margin-right: 10%;
+        margin-left: 5%;
+    }
+
+    #botao:hover{
+        border: none;
+        background-color: var(--cor2);
+    }
+
+    .header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        /*height: 600px;*/
+       /* background-color: gray;*/
+    }
+
+    .headline{
+        flex: 40%;
+        margin-left: 10%;
+       /* border: 1px solid black;*/
+    }
+
+    .headline h2{
+        font-size: 20px;
+        color: var(--cor1);
+        font-family: var(--fonte4);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .headline p{
+        color: gray;
+        text-align: left;
+    }
+
+    .contact-btn{
+        background-color: var(--cor2);
+        padding: 20px;
+        margin-top: 10px;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .contact-btn:hover{
+        background-color: var(--cor1);
+    }
+
+    .img-headline{
+        margin-right: 10%;
+        flex: 40%;
+        text-align: center;
+        /*border: 1px solid #FF2978;*/
+    }
+
+    section{
+        display: inline-block;
+        margin-top: 80px;
+        /*border: 1px solid black;*/
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 5%;
+        text-align: center;
+       /* height: 400px;*/
+       /* width: 90%;*/
+    }
+
+    section h2{
+        width: 100%;
+        font-size: 50px;
+        margin: 0px;
+        font-family: var(--fonte2);
+        font-weight: bold;
+        color: var(--cor1);
+    }
+
+    .servicos{
+        display: inline-block;
+        margin-top: 5%;
+    }
+
+    .card{
+        display: inline-block;
+        width: 30%;
+        padding: 20px;
+        margin: 1%;
+        border: 1px solid #FF2978;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .texto-oculto{
+        display: none;
+    }
+
+    .card:hover{
+        background-color: var(--cor2);
+        color: white;
+        padding: 40px;
+    }
+
+    .card:hover img{
+        display: none;
+    }
+
+    .card:hover .card-text{
+        display: none;
+    }
+
+    .card:hover .texto-oculto{
+        display: block;
+    }
+
+    footer{
+        margin-top: 100px;
+        height: 400px;
+        background-image: linear-gradient(180deg, #180F4A, #090422, black);
+        text-align: center;
+        border-top: 5px solid #FF2978;
+    }
+
+    .logo-rodape{
+        padding: 100px;
+    }
+
+    .agencia{
+        font-family: var(--fonte2);
+        color: white;
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .logo-rodape p{
+        color: white;
+    }
+
+    footer p strong{
+        color: white;
+    }
+
+    .whats{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+
+  
